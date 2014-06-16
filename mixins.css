@@ -1,49 +1,7 @@
 @provide 'mixins';
 
 /**
- * GSS Mixins Library
- *
- * - Border Radius
- * -- borderradius(TOP_RIGHT BOTTOM_RIGHT BOTTOM_LEFT TOP_LEFT)
- * -- rounded(SIZE)
- * - Box Shadow
- * -- boxshadow(HORIZONTAL VERTICAL BLUR SPREAD COLOR)
- * -- boxshadow_inset(HORIZONTAL VERTICAL BLUR SPREAD COLOR)
- * -- boxshadow_none()
- * - Box Sizing
- * -- boxsizing()
- * - Drop Shadow
- * -- dropshadow(HORIZONTAL VERTICAL BLUR ALPHA)
- * - Inner Shadow
- * -- innershadow(HORIZONTAL VERTICAL BLUR ALPHA)
- * - Opacity
- * -- opacity(ALPHA)
- * - Transform
- * -- Flip
- * --- flip_horizontal()
- * --- flip_vertical()
- * -- Rotate
- * --- rotate(DEGREE)
- * --- rotate_180_cw()
- * --- rotate_180_ccw()
- * -- Scale
- * --- scale(RATIO_HORIZONTAL RATIO_VERTICAL)
- * -- Translate
- * --- translate(HORIZONTAL VERTICAL)
- * - Transition
- * -- transition(PROPERTY DURATION)
- * -- transition_effect(PROPERTY DURATION EFFECT)
- * -- transition_delay(PROPERTY DURATION EFFECT DELAY)
- */
-
-/**
  * Border Radius
- *
- * @param TOP_RIGHT size of the top right corner
- * @param BOTTOM_RIGHT size of the bottom right corner
- * @param BOTTOM_LEFT size of the bottom left corner
- * @param TOP_LEFT size of the top left corner
- * @param SIZE size of all corners
  */
 
 @defmixin borderradius(TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT, TOP_LEFT) {
@@ -69,11 +27,6 @@
 
 /**
  * Box Shadow
- * @param HORIZONTAL position of the horizontal shadow
- * @param VERTICAL position of the vertical shadow
- * @param BLUR distance of the blur
- * @param SPREAD shadow size
- * @param COLOR shadow color
  */
 
 @defmixin boxshadow(HORIZONTAL, VERTICAL, BLUR, SPREAD, COLOR) {
@@ -107,10 +60,6 @@
 
 /**
  * Drop Shadow
- * @param HORIZONTAL position of the horizontal shadow
- * @param VERTICAL position of the vertical shadow
- * @param BLUR distance of the blur
- * @param ALPHA shadow opacity (0 to 1)
  */
 
 @defmixin dropshadow(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
@@ -121,10 +70,6 @@
 
 /**
  * Inner Shadow
- * @param HORIZONTAL position of the horizontal shadow
- * @param VERTICAL position of the vertical shadow
- * @param BLUR distance of the blur
- * @param ALPHA shadow opacity (0 to 1)
  */
 
 @defmixin innershadow(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
@@ -135,7 +80,6 @@
 
 /**
  * Opacity
- * @param ALPHA shadow opacity (0 to 1)
  */
 
 @defmixin opacity(ALPHA) {
@@ -147,11 +91,6 @@
 
 /**
  * Transform
- * @param DEGREES angle of the rotation
- * @param RATIO_HORIZONTAL horizontal ratio (x) where 1 = no changes and 2 = twice the size
- * @param RATIO_VERTICAL vertical ratio (y) where 1 = no changes and 2 = twice the size
- * @param HORIZONTAL horizontal change (x) in pixels
- * @param VERTICAL vertical change (x) in pixels
  */
 
 @defmixin flip_horizontal() {
@@ -208,10 +147,6 @@
 
 /**
  * Transition
- * @param PROPERTY name of the CSS property affected
- * @param DURATION time of the transition effect
- * @param EFFECT speed curve of the transition effect
- * @param DELAY time before the transition effect starts
  */
 
 @defmixin transition(PROPERTY, DURATION) {
