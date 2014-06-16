@@ -181,13 +181,13 @@
 }
 
 @defmixin rotate_180_cw() {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
 }
 
 @defmixin rotate_180_ccw() {
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateZ(-180deg);
+    transform: rotateZ(-180deg);
 }
 
 @defmixin scale(RATIO_HORIZONTAL, RATIO_VERTICAL) {
