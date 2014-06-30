@@ -19,6 +19,30 @@
     border-top-left-radius: TOP_LEFT;
 }
 
+@defmixin borderradius_tr(TOP_RIGHT) {
+    -webkit-border-top-right-radius: TOP_RIGHT;
+    -moz-border-radius-topright: TOP_RIGHT;
+    border-top-right-radius: TOP_RIGHT;
+}
+
+@defmixin borderradius_tl(TOP_LEFT) {
+    -webkit-border-top-right-radius: TOP_LEFT;
+    -moz-border-radius-topright: TOP_LEFT;
+    border-top-right-radius: TOP_LEFT;
+}
+
+@defmixin borderradius_br(BOTTOM_RIGHT) {
+    -webkit-border-top-right-radius: BOTTOM_RIGHT;
+    -moz-border-radius-topright: BOTTOM_RIGHT;
+    border-top-right-radius: BOTTOM_RIGHT;
+}
+
+@defmixin borderradius_bl(BOTTOM_LEFT) {
+    -webkit-border-top-right-radius: BOTTOM_LEFT;
+    -moz-border-radius-topright: BOTTOM_LEFT;
+    border-top-right-radius: BOTTOM_LEFT;
+}
+
 @defmixin rounded(SIZE) {
     -webkit-border-radius: SIZE;
     -moz-border-radius: SIZE;
@@ -52,9 +76,8 @@
  */
 
 @defmixin boxsizing() {
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -79,14 +102,35 @@
 }
 
 /**
+ * Outline
+ */
+
+@defmixin outline(SIZE, BORDER, COLOR, OFFSET) {
+    outline: SIZE BORDER COLOR;
+    outline-offset: OFFSET;
+}
+
+/**
  * Opacity
  */
 
 @defmixin opacity(ALPHA) {
-    -moz-opacity: ALPHA;
-    -khtml-opacity: ALPHA;
     -webkit-opacity: ALPHA;
+    -khtml-opacity: ALPHA;
+    -moz-opacity: ALPHA;
     opacity: ALPHA;
+}
+
+/**
+ * Text Shadow
+ */
+
+@defmixin textshadow(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
+    text-shadow: HORIZONTAL VERTICAL BLUR rgba(0, 0, 0, ALPHA);
+}
+
+@defmixin textshadow_color(HORIZONTAL, VERTICAL, BLUR, COLOR) {
+    text-shadow: HORIZONTAL VERTICAL BLUR COLOR;
 }
 
 /**
@@ -121,11 +165,17 @@
 
 @defmixin rotate_180_cw() {
     -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
     transform: rotateZ(180deg);
 }
 
 @defmixin rotate_180_ccw() {
     -webkit-transform: rotateZ(-180deg);
+    -moz-transform: rotateZ(-180deg);
+    -o-transform: rotateZ(-180deg);
+    -ms-transform: rotateZ(-180deg);
     transform: rotateZ(-180deg);
 }
 
@@ -150,22 +200,25 @@
  */
 
 @defmixin transition(PROPERTY, DURATION) {
-    transition: PROPERTY DURATION;
     -webkit-transition: PROPERTY DURATION;
     -moz-transition: PROPERTY DURATION;
+    -ms-transition: PROPERTY DURATION;
     -o-transition: PROPERTY DURATION;
+    transition: PROPERTY DURATION;
 }
 
 @defmixin transition_effect(PROPERTY, DURATION, EFFECT) {
-    transition: PROPERTY DURATION EFFECT;
     -webkit-transition: PROPERTY DURATION EFFECT;
     -moz-transition: PROPERTY DURATION EFFECT;
+    -ms-transition: PROPERTY DURATION EFFECT;
     -o-transition: PROPERTY DURATION EFFECT;
+    transition: PROPERTY DURATION EFFECT;
 }
 
 @defmixin transition_delay(PROPERTY, DURATION, EFFECT, DELAY) {
-    transition: PROPERTY DURATION EFFECT DELAY;
     -webkit-transition: PROPERTY DURATION EFFECT DELAY;
     -moz-transition: PROPERTY DURATION EFFECT DELAY;
+    -ms-transition: PROPERTY DURATION EFFECT DELAY;
     -o-transition: PROPERTY DURATION EFFECT DELAY;
+    transition: PROPERTY DURATION EFFECT DELAY;
 }
