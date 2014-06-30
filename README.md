@@ -259,3 +259,6 @@ Unleash the power of GssResource and CSS3 in your GWT application
 ```
 @mixin transition(width, 250, ease, 100);
 ```
+
+##Thanks to
+[![Arcbees.com](http://arcbees-ads.appspot.com/ad.png)](http://arcbees.com)
