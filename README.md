@@ -20,6 +20,30 @@ Unleash the power of GssResource and CSS3 in your GWT application
 @mixin borderradius(5px, 0, 10px, 0);
 ```
 
+### borderradius_tr(TOP_RIGHT)
+
+```
+@mixin borderradius_tr(5px);
+```
+
+### borderradius_tl(TOP_LEFT)
+
+```
+@mixin borderradius_tl(5px);
+```
+
+### borderradius_br(BOTTOM_RIGHT)
+
+```
+@mixin borderradius_br(5px);
+```
+
+### borderradius_bl(BOTTOM_LEFT)
+
+```
+@mixin borderradius_bl(5px);
+```
+
 ### rounded(SIZE)
 
 ```
@@ -96,6 +120,22 @@ Unleash the power of GssResource and CSS3 in your GWT application
 @mixin innershadow(0, 5px, 2px, 0.5);
 ```
 
+## Outline
+
+**@param SIZE** size of the border outline
+
+**@param BORDER** border style type
+
+**@param COLOR** color of the outline
+
+**@param OFFSET** offset from the element
+
+### outline(SIZE, BORDER, COLOR, OFFSET)
+
+```
+@mixin outline(2px, solid, #000, 10px);
+```
+
 ## Opacity
 
 **@param ALPHA** shadow opacity (0 to 1)
@@ -104,6 +144,30 @@ Unleash the power of GssResource and CSS3 in your GWT application
 
 ```
 @mixin alpha(0.5);
+```
+
+## Text Shadow
+
+**@param HORIZONTAL** position of the horizontal shadow
+
+**@param VERTICAL** position of the vertical shadow
+
+**@param BLUR** distance of the blur
+
+**@param ALPHA** shadow opacity (0 to 1)
+
+**@param COLOR** color of the shadow
+
+### textshadow(HORIZONTAL, VERTICAL, BLUR, ALPHA)
+
+```
+@mixin textshadow(2px, 2px, 1px, 0.5);
+```
+
+### textshadow_color(HORIZONTAL, VERTICAL, BLUR, COLOR)
+
+```
+@mixin textshadow_color(0, 5px, 2px, #11ff66);
 ```
 
 ## Transform
@@ -195,3 +259,6 @@ Unleash the power of GssResource and CSS3 in your GWT application
 ```
 @mixin transition(width, 250, ease, 100);
 ```
+
+##Thanks to
+[![Arcbees.com](http://arcbees-ads.appspot.com/ad.png)](http://arcbees.com)
