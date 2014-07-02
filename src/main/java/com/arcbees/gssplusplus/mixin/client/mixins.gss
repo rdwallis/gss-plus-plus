@@ -166,50 +166,42 @@
  * Shadow
  */
 
-/* Box Shadow */
-
-@defmixin boxshadow(HORIZONTAL, VERTICAL, BLUR, SPREAD, COLOR) {
-    -webkit-box-shadow: HORIZONTAL VERTICAL BLUR SPREAD COLOR;
-    -moz-box-shadow: HORIZONTAL VERTICAL BLUR SPREAD COLOR;
-    box-shadow: HORIZONTAL VERTICAL BLUR SPREAD COLOR;
-}
-
-@defmixin boxshadow_inset(HORIZONTAL, VERTICAL, BLUR, SPREAD, COLOR) {
-    -webkit-box-shadow: inset HORIZONTAL VERTICAL BLUR SPREAD COLOR;
-    -moz-box-shadow: inset HORIZONTAL VERTICAL BLUR SPREAD COLOR;
-    box-shadow: inset HORIZONTAL VERTICAL BLUR SPREAD COLOR;
-}
-
-@defmixin boxshadow_none() {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-/* Drop Shadow */
-
-@defmixin dropshadow(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
+@defmixin shadow(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
     -webkit-box-shadow: HORIZONTAL VERTICAL BLUR rgba(0, 0, 0, ALPHA);
     -moz-box-shadow: HORIZONTAL VERTICAL BLUR rgba(0, 0, 0, ALPHA);
     box-shadow: HORIZONTAL VERTICAL BLUR rgba(0, 0, 0, ALPHA);
 }
 
-/* Inner Shadow */
+@defmixin shadow_color(HORIZONTAL, VERTICAL, BLUR, SPREAD, COLOR) {
+    -webkit-box-shadow: HORIZONTAL VERTICAL BLUR SPREAD COLOR;
+    -moz-box-shadow: HORIZONTAL VERTICAL BLUR SPREAD COLOR;
+    box-shadow: HORIZONTAL VERTICAL BLUR SPREAD COLOR;
+}
 
-@defmixin innershadow(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
+@defmixin shadow_inner(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
     -webkit-box-shadow: inset HORIZONTAL VERTICAL BLUR rgba(0, 0, 0, ALPHA);
     -moz-box-shadow: inset HORIZONTAL VERTICAL BLUR rgba(0, 0, 0, ALPHA);
     box-shadow: inset HORIZONTAL VERTICAL BLUR rgba(0, 0, 0, ALPHA);
 }
 
-/* Text Shadow */
+@defmixin shadow_inner_color(HORIZONTAL, VERTICAL, BLUR, SPREAD, COLOR) {
+    -webkit-box-shadow: inset HORIZONTAL VERTICAL BLUR SPREAD COLOR;
+    -moz-box-shadow: inset HORIZONTAL VERTICAL BLUR SPREAD COLOR;
+    box-shadow: inset HORIZONTAL VERTICAL BLUR SPREAD COLOR;
+}
 
-@defmixin textshadow(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
+@defmixin shadow_text(HORIZONTAL, VERTICAL, BLUR, ALPHA) {
     text-shadow: HORIZONTAL VERTICAL BLUR rgba(0, 0, 0, ALPHA);
 }
 
-@defmixin textshadow_color(HORIZONTAL, VERTICAL, BLUR, COLOR) {
+@defmixin shadow_text_color(HORIZONTAL, VERTICAL, BLUR, COLOR) {
     text-shadow: HORIZONTAL VERTICAL BLUR COLOR;
+}
+
+@defmixin shadow_none() {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 /**
