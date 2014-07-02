@@ -249,7 +249,6 @@ input:focus {
 
 .home .myelement {
     color: #fff;
-    background-color: #a751f8;
     text-align: center;
 
     width: 50%;
@@ -257,11 +256,12 @@ input:focus {
     margin: 0 auto 4em;
 
     @mixin rounded(15px);
-    @mixin textshadow(2px, 2px, 4px, 0.6);
+    @mixin shadow_text(2px, 2px, 4px, 0.6);
+    @mixin gradient_h(#000, #800eeb);
 }
 
 .home .myelement:hover {
-    @mixin dropshadow(0, 0, 4px, 0.6);
+    @mixin shadow(2px, 2px, 1px, 0.3);
 }
 
 /* -> Sidebar -- */
